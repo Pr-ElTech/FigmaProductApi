@@ -1,0 +1,263 @@
+header {
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 50px;
+  z-index: 10;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  background: var(--social-bg);
+
+  article {
+    width: 90%;
+    height: 50px;
+    gap: 20px;
+    display: flex;
+    background: var(--social-bg);
+  }
+
+  .logobar {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      width: 120px;
+      height: 50px;
+    }
+
+    .text1 {
+      height: 100%;
+      width: 300px;
+      display: flex;
+      gap: 20px;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 100px;
+      font-size: 15px;
+      border-radius: 10px;
+      color: var(--bg);
+
+      font-family: inherit;
+      background: var(--btnBg1);
+    }
+    .text2 {
+      background: var(--social-bg);
+      color: var(--text-h);
+    }
+  }
+
+  .center {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      padding: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      height: 35px;
+      width: 350px;
+      border: none;
+    }
+    input:focus {
+      outline: none;
+    }
+
+    .btn {
+      font-size: 13px;
+      font-family: sans-serif;
+      height: 35px;
+      width: 100px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      color: var(--bg);
+      background: var(--btnBg2);
+    }
+  }
+
+  .rightS {
+    width: 40%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .StoreH {
+      width: 20%;
+      height: 100%;
+      gap: 10px;
+      display: flex;
+
+      .shop {
+        height: 40px;
+        width: 40px;
+        display: none;
+        color: var(--btnBg1);
+      }
+
+      .Store {
+        height: 40px;
+        width: 40px;
+        color: var(--btnBg1);
+      }
+    }
+
+    .btnC {
+      width: 80%;
+      height: 100%;
+      gap: 10px;
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+    z-index: 10;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background: var(--social-bg);
+
+    article {
+      width: 90%;
+      height: 50px;
+      gap: 20px;
+      display: flex;
+      background: var(--social-bg);
+    }
+
+    .logobar {
+      width: 35%;
+      height: 100%;
+      display: flex;
+      gap: 30px;
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        width: 120px;
+        height: 50px;
+        border-top-left-radius: 10px;
+      }
+
+      .text1 {
+        height: 100%;
+        width: 300px;
+        display: none;
+        gap: 20px;
+      }
+      p {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100px;
+        font-size: 15px;
+        border-radius: 10px;
+        color: var(--bg);
+        font-family: inherit;
+        background: var(--btnBg1);
+      }
+      .text2 {
+        background: var(--social-bg);
+        color: var(--text-h);
+      }
+    }
+
+    .center {
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 35px;
+        width: 350px;
+        border: none;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      .btn {
+        font-size: 13px;
+        font-family: sans-serif;
+        height: 35px;
+        width: 100px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: var(--bg);
+        background: var(--btnBg2);
+      }
+    }
+
+    .rightS {
+      width: 60%;
+      height: 100%;
+      gap: 10px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .StoreH {
+        width: 60%;
+        height: 100%;
+        gap: 10px;
+        display: flex;
+
+        .shop {
+          display: flex;
+          height: 40px;
+          width: 40px;
+          color: var(--btnBg1);
+        }
+
+        .Store {
+          height: 40px;
+          width: 40px;
+          color: var(--btnBg1);
+        }
+      }
+
+      .btnC {
+        width: 80%;
+        height: 100%;
+        gap: 10px;
+        display: none;
+      }
+    }
+  }
+}

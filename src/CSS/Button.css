@@ -1,0 +1,16 @@
+button {
+  height: 50px;
+  width: 120px;
+  border-radius: 15px;
+  border: none;
+  font-family: sans-serif;
+  color: var(--bg);
+  cursor: pointer;
+  transition: 0.3s;
+  background: var(--btnBg2);
+}
+button:hover {
+  border: 1px solid var(--btnBg2);
+  color: var(--btnBg2);
+  background-color: var(--bg);
+}

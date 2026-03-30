@@ -1,21 +1,39 @@
 import React, { useEffect, useState } from "react";
 import Crad from "./Crad";
 import "../CSS/Body.css";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Body = () => {
   const [product, setproduct] = useState([]);
-  const ApiItems = async () => {
+  // const ApiItems = async () => {
+  //   try {
+  //     const response = await fetch("https://api.escuelajs.co/api/v1/products");
+  //     if (!response.ok) throw new Error("Failed to fetch Api  Products");
+  //     const datas = await response.json();
+  //     setproduct(datas);
+  //   } catch (error) {
+  //     console.log(error.message);
+  //   }
+  // };
+  // useEffect(() => {
+  //   ApiItems();
+  // }, []);
+
+  const fetchData = async () => {
     try {
-      const response = await fetch("https://api.escuelajs.co/api/v1/products");
-      if (!response.ok) throw new Error("Failed to fetch Api  Products");
-      const datas = await response.json();
-      setproduct(datas);
-    } catch (error) {
-      console.log(error.message);
+      const productA = await axios.get(
+        "https://api.escuelajs.co/api/v1/products",
+      );
+      setproduct(productA.data);
+      toast.success("prducts successful");
+    } catch (Error) {
+      toast.error("failed to load");
+      throw new Error(`Error fecthing Api ${Error.message}`);
     }
   };
   useEffect(() => {
-    ApiItems();
+    fetchData();
   }, []);
 
   return (

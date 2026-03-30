@@ -3,5 +3,6 @@ footer {
   width: 100%;
   background-color: var(--btnBg1);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }

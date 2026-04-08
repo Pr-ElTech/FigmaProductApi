@@ -22,7 +22,8 @@ main {
   justify-content: space-between;
   height: max-content;
   max-height: 100vh;
-  background-color: pink;
+  background-color: #ffc0cb;
   overflow: scroll;
+  scrollbar-width: none;
   background-color: var(--bg);
 }

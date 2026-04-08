@@ -2,11 +2,13 @@ import React from "react";
 import Button from "./Button";
 import Footer12 from "../assets/footerimg.png";
 import { FaChevronCircleRight } from "react-icons/fa";
+import Header from "./Header";
 
 const Hero = () => {
   const btnText = { text1: "Shop now" };
   return (
     <section>
+      <Header />
       <div>
         <h5>
           Make healthy life with <b>fresh</b>

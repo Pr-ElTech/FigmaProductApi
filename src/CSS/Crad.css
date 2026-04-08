@@ -53,10 +53,22 @@
     }
   }
 }
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: greenyellow;
+}
 
 .Card:hover {
   box-shadow: 4px 6px 8px gray;
 }
+
+/* @keyframes (Card) {
+  
+} */
 @media (max-width: 1024) {
   .Card {
     height: 300px;

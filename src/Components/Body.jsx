@@ -3,9 +3,11 @@ import Crad from "./Crad";
 import "../CSS/Body.css";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Header from "./Header";
 
 const Body = () => {
   const [product, setproduct] = useState([]);
+  const [isloading, setisloading] = useState(true);
   // const ApiItems = async () => {
   //   try {
   //     const response = await fetch("https://api.escuelajs.co/api/v1/products");
@@ -26,6 +28,7 @@ const Body = () => {
         "https://api.escuelajs.co/api/v1/products",
       );
       setproduct(productA.data);
+      setisloading(false);
       toast.success("prducts successful");
     } catch (Error) {
       toast.error("failed to load");
@@ -34,10 +37,22 @@ const Body = () => {
   };
   useEffect(() => {
     fetchData();
+
+    // toast.promise(fetchData(), {
+    //   loading: "Loading products...",
+    //   success: "Inventory ready!",
+    //   error: "Could not fetch data.",
+    // });
   }, []);
+
+  if (isloading) {
+    toast.loading("Loading products...");
+    return <h1 className="loading">loading......</h1>;
+  }
 
   return (
     <section className="Body">
+      <Header />
       <article className="IntroTextA">
         <h1>All Products</h1>
         <p>

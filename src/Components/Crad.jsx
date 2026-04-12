@@ -3,7 +3,7 @@ import Button from "./Button";
 import "../CSS/Crad.css";
 
 const Crad = ({ product }) => {
-  const CardBtnTex = { text1: "Add to Cart", color: "#02b928" };
+  const CardBtnTex = { text1: "View details", color: "#02b928" };
   return (
     <div className="Card">
       <img src={product.images} alt="" />

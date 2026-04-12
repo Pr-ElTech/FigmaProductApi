@@ -27,3 +27,6 @@ main {
   scrollbar-width: none;
   background-color: var(--bg);
 }
+.wrapper::-webkit-scrollbar {
+  display: none;
+}

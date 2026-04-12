@@ -87,6 +87,7 @@ header {
       justify-content: center;
       align-items: center;
       display: flex;
+      cursor: pointer;
       color: var(--bg);
       background: var(--btnBg2);
     }
@@ -129,7 +130,7 @@ header {
   }
 }
 
-@media (max-width: 1104px) {
+@media (max-width: 1000px) {
   header {
     width: 100%;
     height: 100px;
